@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>CLI | jQuery Command Line Interface</title>
+  <meta name="title" content="CLI | jQuery Command Line Interface">
+  <meta name="description" content="Simulating a command line interface to display info using jQuery">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<main>
+<section id="home">
+<h2>CLI - Command Line Interface Simulation</h2>
+<p>A fun experiment for displaying simple info in a geeky manner.</p>
+<p><span>Type 'help' + <kbd>Enter</kbd> -- for available commands.</span></p>
+</section>
+
+<section id="about">
+<h2><span>&raquo;About</span></h2>
+<p>This is an experiment built by <a href="http://syndicatefx.com" target="_blank">Paulo Nunes</a> for showcasing a user profile or cv in an unusual but original way by simulating a command line interface. It's nothing more than the usual hidden elements triggered by some jQuery to show/hide each section of content, based on input values.</p>
+<p>It makes use of <a href="https://github.com/gr8pathik/jquery-texttyper" target="_blank">jQuery-texttyper</a> for the fancy letter animations.</p>
+</section>
+
+<section id="usage">
+<h2><span>&raquo;Usage</span></h2>
+<p>Using it is pretty straight forward. Create several(as much as you need) divs or &laquo;section&raquo; elements each with it's unique id to hold your content. Make sure to have an error section (id="error") with some information to warn the user when he/she mistypes a command or if there is no section with that name, think of it as a 404 page.</p>
+<p>A section with id="help" is also required so you can list all the available sections and let your users know what words to write to access that particular content.</p>
+<p>The input field must be a standalone element and must not be placed inside any of the content divs or sections, and make sure you give it a classname "command", if you want to name it anything else you need to edit the app.js and change all instances of .command in the script to match your chosen classname.</p>
+<p>In short, just view the source code of this demo, copy/modify it to your liking making sure you include the error and help sections.</p>
+</section>
+
+<section id="download">
+<h2><span>&raquo;Download</span></h2>
+<p>Download the source code: <a href="jquery-cli.zip">jquery-cli.zip</a></br>
+Depends on jQuery</br>
+License: MIT</p>
+</section>
+
+<section id="error">
+<p>Command not found!<p> 
+<p><span>Type 'help' + <kbd>Enter</kbd> -- for available commands.</span></p>
+</section>
+
+<section id="help">
+<h2><span>&raquo;Help?</span></h2>
+<p><span>Type [command] + <kbd>Enter</kbd></span></p>
+<ul>
+	<li>'home' -- Thats obvious!</li>
+	<li>'about' -- What's this for</li>
+  <li>'usage' -- How to</li>
+  <li>'download' -- Download + license</li>
+	<li>'help' -- displays this list</li>
+</ul>
+</section>
+
+<span class="command">syndicatefx:/$<input type="text"></span>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
