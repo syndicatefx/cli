@@ -1,10 +1,10 @@
 /*!
- * jQuery CLI
- * Simulating a command line interface with jQuery
+ * CLI
+ * Simulating a command line interface with vanilla JS
  *
- * @version : 1.0.0
- * @author : Paulo Nunes (http://syndicatefx.com)
- * @plugin_demo : http://jimmy.surge.sh/cli
+ * @version : 1.2.0
+ * @author : Paulo Nunes (https://syndicatefx.com)
+ * @plugin_demo : https://codepen.io/syndicatefx/pen/jPxXpz
  * @license: MIT
  */
 @import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
