@@ -3,7 +3,7 @@
  * Simulating a command line interface with vanilla JS
  *
  * @version : 1.2.0
- * @author : Paulo Nunes (https://syndicatefx.com)
+ * @author : Paulo Nunes
  * @demo : https://codepen.io/syndicatefx/pen/jPxXpz
  * @license: MIT
  */
